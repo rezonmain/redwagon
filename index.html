@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Red Wagon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#E03030">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#E0303">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="top-nav">
+      <div id="no-select" class="burger-btn" onclick="toggleNav()">
+        <span class="drop-icon">
+          <svg class="svg-icon-drop" viewBox="0 0 20 20">
+            <path
+              d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10">
+            </path>
+          </svg>
+        </span>
+        <span class="animated-burger-btn">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </span>
+      </div>
+      <a href="index.html">
+        <div class="logo"></div>
+      </a>
+      <div class="call-btn">
+        <a href="tel:6651183165">Llámanos</a>
+      </div>
+    </nav>
+    <aside class="side-nav">
+      <ul class="nav-menu">
+        <li class="logo-container">
+          <a href="index.html" class="nav-logo">
+            <div class="logo-image"></div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M18.121,9.88l-7.832-7.836c-0.155-0.158-0.428-0.155-0.584,0L1.842,9.913c-0.262,0.263-0.073,0.705,0.292,0.705h2.069v7.042c0,0.227,0.187,0.414,0.414,0.414h3.725c0.228,0,0.414-0.188,0.414-0.414v-3.313h2.483v3.313c0,0.227,0.187,0.414,0.413,0.414h3.726c0.229,0,0.414-0.188,0.414-0.414v-7.042h2.068h0.004C18.331,10.617,18.389,10.146,18.121,9.88 M14.963,17.245h-2.896v-3.313c0-0.229-0.186-0.415-0.414-0.415H8.342c-0.228,0-0.414,0.187-0.414,0.415v3.313H5.032v-6.628h9.931V17.245z M3.133,9.79l6.864-6.868l6.867,6.868H3.133z">
+              </path>
+            </svg>
+            <span class="link-text">Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="menu.html" class="nav-link">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M8.627,7.885C8.499,8.388,7.873,8.101,8.13,8.177L4.12,7.143c-0.218-0.057-0.351-0.28-0.293-0.498c0.057-0.218,0.279-0.351,0.497-0.294l4.011,1.037C8.552,7.444,8.685,7.667,8.627,7.885 M8.334,10.123L4.323,9.086C4.105,9.031,3.883,9.162,3.826,9.38C3.769,9.598,3.901,9.82,4.12,9.877l4.01,1.037c-0.262-0.062,0.373,0.192,0.497-0.294C8.685,10.401,8.552,10.18,8.334,10.123 M7.131,12.507L4.323,11.78c-0.218-0.057-0.44,0.076-0.497,0.295c-0.057,0.218,0.075,0.439,0.293,0.495l2.809,0.726c-0.265-0.062,0.37,0.193,0.495-0.293C7.48,12.784,7.35,12.562,7.131,12.507M18.159,3.677v10.701c0,0.186-0.126,0.348-0.306,0.393l-7.755,1.948c-0.07,0.016-0.134,0.016-0.204,0l-7.748-1.948c-0.179-0.045-0.306-0.207-0.306-0.393V3.677c0-0.267,0.249-0.461,0.509-0.396l7.646,1.921l7.654-1.921C17.91,3.216,18.159,3.41,18.159,3.677 M9.589,5.939L2.656,4.203v9.857l6.933,1.737V5.939z M17.344,4.203l-6.939,1.736v9.859l6.939-1.737V4.203z M16.168,6.645c-0.058-0.218-0.279-0.351-0.498-0.294l-4.011,1.037c-0.218,0.057-0.351,0.28-0.293,0.498c0.128,0.503,0.755,0.216,0.498,0.292l4.009-1.034C16.092,7.085,16.225,6.863,16.168,6.645 M16.168,9.38c-0.058-0.218-0.279-0.349-0.498-0.294l-4.011,1.036c-0.218,0.057-0.351,0.279-0.293,0.498c0.124,0.486,0.759,0.232,0.498,0.294l4.009-1.037C16.092,9.82,16.225,9.598,16.168,9.38 M14.963,12.385c-0.055-0.219-0.276-0.35-0.495-0.294l-2.809,0.726c-0.218,0.056-0.351,0.279-0.293,0.496c0.127,0.506,0.755,0.218,0.498,0.293l2.807-0.723C14.89,12.825,15.021,12.603,14.963,12.385">
+              </path>
+            </svg>
+            <span class="link-text">Menú</span>
+          </a>
+        </li>
+        <li id="call-us" class="nav-item">
+          <a href="tel:6651183165" class="nav-link">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M14.911,1.295H5.09c-0.737,0-1.339,0.603-1.339,1.339v14.733c0,0.736,0.603,1.338,1.339,1.338h9.821c0.737,0,1.339-0.602,1.339-1.338V2.634C16.25,1.898,15.648,1.295,14.911,1.295 M15.357,17.367c0,0.24-0.205,0.445-0.446,0.445H5.09c-0.241,0-0.446-0.205-0.446-0.445v-0.893h10.714V17.367z M15.357,15.58H4.644V4.42h10.714V15.58z M15.357,3.527H4.644V2.634c0-0.241,0.205-0.446,0.446-0.446h9.821c0.241,0,0.446,0.206,0.446,0.446V3.527z">
+              </path>
+            </svg>
+            <span id="phone-no" class="link-text">Llámanos</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href=# class="nav-link">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M18.303,4.742l-1.454-1.455c-0.171-0.171-0.475-0.171-0.646,0l-3.061,3.064H2.019c-0.251,0-0.457,0.205-0.457,0.456v9.578c0,0.251,0.206,0.456,0.457,0.456h13.683c0.252,0,0.457-0.205,0.457-0.456V7.533l2.144-2.146C18.481,5.208,18.483,4.917,18.303,4.742 M15.258,15.929H2.476V7.263h9.754L9.695,9.792c-0.057,0.057-0.101,0.13-0.119,0.212L9.18,11.36h-3.98c-0.251,0-0.457,0.205-0.457,0.456c0,0.253,0.205,0.456,0.457,0.456h4.336c0.023,0,0.899,0.02,1.498-0.127c0.312-0.077,0.55-0.137,0.55-0.137c0.08-0.018,0.155-0.059,0.212-0.118l3.463-3.443V15.929z M11.241,11.156l-1.078,0.267l0.267-1.076l6.097-6.091l0.808,0.808L11.241,11.156z">
+              </path>
+            </svg>
+            <span class="link-text">Blog</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.facebook.com/rwrestaurante/" class="nav-link" target="_blank">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path fill="none"
+                d="M10,0.5c-5.247,0-9.5,4.253-9.5,9.5c0,5.247,4.253,9.5,9.5,9.5c5.247,0,9.5-4.253,9.5-9.5C19.5,4.753,15.247,0.5,10,0.5 M10,18.637c-4.77,0-8.636-3.867-8.636-8.637S5.23,1.364,10,1.364S18.637,5.23,18.637,10S14.77,18.637,10,18.637 M10.858,7.949c0-0.349,0.036-0.536,0.573-0.536h0.719v-1.3H11c-1.38,0-1.866,0.65-1.866,1.743v0.845h-0.86V10h0.86v3.887h1.723V10h1.149l0.152-1.299h-1.302L10.858,7.949z">
+              </path>
+            </svg>
+            <span class="link-text">Facebook</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <div class="clickAway" onclick="toggleNav()"></div>
+  </header>
+
+  <main>
+    <div class="banner-wrapper">
+      <section class="banner-card">
+        <article class="banner">
+          <div class="banner-section">
+            <div class="section-image">
+              <div class="section-logo"></div>
+            </div>
+            <h1 class="title-text">Autenticas Hamburgesas</h1>
+            <h3 class="subtext-title">Pasa un rato agradable</h3>
+            <p class="card-text">Tenemos riquísimos hotdogs sencillos o Jumbo, 100% de Res, 100% deliciosos, prepáratelos en nuestra barra con ingredientes como: champiñones, pepinillos, jalapeño, salsas, papitas, chilitos güeros.</p>
+          </div>
+        </article>
+      </section>
+    </div>
+    <div class="main-wrapper">
+      <section class="cards">
+        <article class="promos-section">
+          <div class="promos-carousel-section">
+            <h2 class="section-title">Nuestras promociones</h2>
+            <div class="carousel">
+              <div class="btn" onclick="moveCarousel('left')">
+                <svg class="svg-icon-arrow" viewBox="0 0 20 20">
+                  <path
+                    d="M11.739,13.962c-0.087,0.086-0.199,0.131-0.312,0.131c-0.112,0-0.226-0.045-0.312-0.131l-3.738-3.736c-0.173-0.173-0.173-0.454,0-0.626l3.559-3.562c0.173-0.175,0.454-0.173,0.626,0c0.173,0.172,0.173,0.451,0,0.624l-3.248,3.25l3.425,3.426C11.911,13.511,11.911,13.789,11.739,13.962 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.148,3.374,7.521,7.521,7.521C14.147,17.521,17.521,14.148,17.521,10">
+                  </path>
+                </svg>
+              </div>
+              <div class="carousel-cell"></div>
+              <div class="btn" onclick="moveCarousel('right')">
+                <svg class="svg-icon-arrow" viewBox="0 0 20 20">
+                  <path
+                    d="M12.522,10.4l-3.559,3.562c-0.172,0.173-0.451,0.176-0.625,0c-0.173-0.173-0.173-0.451,0-0.624l3.248-3.25L8.161,6.662c-0.173-0.173-0.173-0.452,0-0.624c0.172-0.175,0.451-0.175,0.624,0l3.738,3.736C12.695,9.947,12.695,10.228,12.522,10.4 M18.406,10c0,4.644-3.764,8.406-8.406,8.406c-4.644,0-8.406-3.763-8.406-8.406S5.356,1.594,10,1.594C14.643,1.594,18.406,5.356,18.406,10M17.521,10c0-4.148-3.374-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.147,17.521,17.521,14.147,17.521,10">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <h2 class="section-title">Conoce nuestro menú</h2>
+          <div class="menu-section">
+            <div class="section-image"></div>
+            <div class="section-content">
+              <h3 class="subtext-title">Variedad de hamburguesas🍔</h3>
+              <p class="card-text">¡Garantizamos ingredientes frescos en cada mordida! Hamburguesa de carne preparada nunca congelada, con ingredientes frescos y pan de la región. Acompáñalas con papas fritas, sazonadas con sal y pimienta. </p>
+              <div class="menu-btn">
+                <a href="menu.html">Ver menú</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="order-card">
+          <h2 class="section-title">Ordena a domicilio</h2>
+          <div class="order-section">
+            <div class="section-image"></div>
+            <div class="section-content">
+              <h3 class="subtext-title">Servicio a domicilio gratis🛵</h3>
+              <p class="card-text">Debido a las medidas de seguridad por el virus COVID-19 estaremos abiertos únicamente para llevar o servicio a domicilio.</p>
+              <p id="order-phone">Teléfono: <a href="tel:6651183165">665-118-3165</a></p>
+              <div class="order-btn">
+                <a href="tel:6651183165">Ordenar</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="ubicacion-card">
+          <h2 class="section-title">Horario y ubicación</h2>
+          <div class="ubicacion-section">
+            <iframe class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3362.3863985429603!2d-116.64320128420229!3d32.56921771418538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d912b955a5bd3b%3A0xbfbc1abd43463378!2sRed%20Wagon%20-%20Hamburguesas%20y%20Hotdogs!5e0!3m2!1sen!2smx!4v1587296627031!5m2!1sen!2smx"
+              frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="section-content">
+              <h3 class="subtext-title">Dirección</h3>
+              <p class="card-text">RW Restaurante Prof. José Gutiérrez Duran 131-A 21450 Tecate, BC (Frente a gimnasio municipal)</p>
+              <table class="hours-table">
+                <tr>
+                  <th>Domingo a Jueves</th>
+                  <th>Miercoles</th>
+                  <th>Viernes y sabado</th>
+                </tr>
+                <tr>
+                  <td>1pm - 9pm</td>
+                  <td>Cerrado</td>
+                  <td>1pm 10pm</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </article>
+        <article class="contacto-card">
+          <h2 class="section-title">Contáctanos</h2>
+          <div class="contacto-section">
+            <div class="social-links">
+              <div class="contact-link">
+                <a href="tel:6651183168" class="nav-link">
+                  <svg class="svg-icon-link" viewBox="0 0 20 20">
+                    <path
+                      d="M14.911,1.295H5.09c-0.737,0-1.339,0.603-1.339,1.339v14.733c0,0.736,0.603,1.338,1.339,1.338h9.821c0.737,0,1.339-0.602,1.339-1.338V2.634C16.25,1.898,15.648,1.295,14.911,1.295 M15.357,17.367c0,0.24-0.205,0.445-0.446,0.445H5.09c-0.241,0-0.446-0.205-0.446-0.445v-0.893h10.714V17.367z M15.357,15.58H4.644V4.42h10.714V15.58z M15.357,3.527H4.644V2.634c0-0.241,0.205-0.446,0.446-0.446h9.821c0.241,0,0.446,0.206,0.446,0.446V3.527z">
+                    </path>
+                  </svg>
+                  <span class="link-text">Llámanos <p>665-118-3165</p></span>
+                </a>
+              </div>
+              <div class="contact-link">
+                <a href="https://www.facebook.com/rwrestaurante/" class="nav-link" target="_blank">
+                  <svg class="svg-icon-link" viewBox="0 0 20 20">
+                    <path fill="none"
+                      d="M10,0.5c-5.247,0-9.5,4.253-9.5,9.5c0,5.247,4.253,9.5,9.5,9.5c5.247,0,9.5-4.253,9.5-9.5C19.5,4.753,15.247,0.5,10,0.5 M10,18.637c-4.77,0-8.636-3.867-8.636-8.637S5.23,1.364,10,1.364S18.637,5.23,18.637,10S14.77,18.637,10,18.637 M10.858,7.949c0-0.349,0.036-0.536,0.573-0.536h0.719v-1.3H11c-1.38,0-1.866,0.65-1.866,1.743v0.845h-0.86V10h0.86v3.887h1.723V10h1.149l0.152-1.299h-1.302L10.858,7.949z">
+                    </path>
+                  </svg>
+                  <span class="link-text">Facebook <p>facebook.com/rwrestaurante</p></span>
+                </a>
+              </div>
+              <div class="contact-link">
+                <a href="https://www.instagram.com/rwrestaurante/" class="nav-link" target="_blank">
+                  <svg class="svg-icon-link" viewBox="0 0 20 20">
+                    <path fill="none"
+                      d="M9.969,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.195,0,9.406-4.211,9.406-9.406C19.375,4.805,15.164,0.594,9.969,0.594 M9.969,18.552c-4.723,0-8.551-3.829-8.551-8.552s3.829-8.551,8.551-8.551S18.521,5.277,18.521,10S14.691,18.552,9.969,18.552 M12.534,5.724H7.403c-0.944,0-1.71,0.766-1.71,1.71v5.131c0,0.944,0.766,1.71,1.71,1.71h5.131c0.944,0,1.71-0.766,1.71-1.71V7.435C14.244,6.49,13.479,5.724,12.534,5.724M11.679,7.007h1.283V8.29h-1.283V7.007z M9.969,8.29c0.944,0,1.71,0.766,1.71,1.71s-0.766,1.71-1.71,1.71s-1.71-0.766-1.71-1.71S9.024,8.29,9.969,8.29 M13.39,12.565c0,0.472-0.384,0.854-0.855,0.854H7.403c-0.472,0-0.855-0.383-0.855-0.854V9.573h0.898C7.423,9.712,7.403,9.854,7.403,10c0,1.417,1.149,2.565,2.565,2.565c1.416,0,2.565-1.148,2.565-2.565c0-0.146-0.02-0.288-0.043-0.427h0.898V12.565z">
+                    </path>
+                  </svg>
+                  <span class="link-text">Instagram <p>instagram.com/rwrestaurante</p></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+</body>
+<script src="js/main.js"></script>
+
+</html>

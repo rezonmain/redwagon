@@ -780,7 +780,7 @@ body::-webkit-scrollbar-thumb {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 }
 

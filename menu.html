@@ -129,24 +129,41 @@
       <div class="main-wrapper">
         <section class="menu-page-cards">
           <article class="menu-page-card">
-            <img class="menu-section-image" src="img/menu1.jpg" onclick="openCarousel('img/menu1.jpg','0')"/>
+            <img
+              class="menu-section-image"
+              src="img/menu1.jpg"
+              onclick="openCarousel('img/menu1.jpg',0)"
+            />
           </article>
           <article class="menu-page-card">
-            <img class="menu-section-image" src="img/menu2.jpg" onclick="openCarousel('img/menu2.jpg','1')" />
+            <img
+              class="menu-section-image"
+              src="img/menu2.jpg"
+              onclick="openCarousel('img/menu2.jpg',1)"
+            />
           </article>
           <article class="menu-page-card">
-            <img class="menu-section-image" src="img/menu3.jpg" onclick="openCarousel('img/menu3.jpg','2')"/>
+            <img
+              class="menu-section-image"
+              src="img/menu3.jpg"
+              onclick="openCarousel('img/menu3.jpg',2)"
+            />
           </article>
           <article class="menu-page-card">
-            <img class="menu-section-image" src="img/menu4.jpg" onclick="openCarousel('img/menu4.jpg','3')"/>
+            <img
+              class="menu-section-image"
+              src="img/menu4.jpg"
+              onclick="openCarousel('img/menu4.jpg',3)"
+            />
           </article>
           <article class="menu-page-card">
-            <img class="menu-section-image" src="img/menu5.jpg" onclick="openCarousel('img/menu5.jpg','4')"/>
+            <img
+              class="menu-section-image"
+              src="img/menu5.jpg"
+              onclick="openCarousel('img/menu5.jpg',4)"
+            />
           </article>
         </section>
-        <script>
-          openCarousel('img/menu1.jpg','0')
-        </script>
         <section class="menu-display">
           <div class="btn" onclick="moveCarousel('left')">
             <svg class="svg-icon-arrow" viewBox="0 0 20 20">
@@ -163,7 +180,9 @@
               ></path>
             </svg>
           </div>
-
+          <script>
+            openCarousel("img/menu1.jpg", 0);
+          </script>
         </section>
         <section>
           <article class="order-card">
@@ -246,4 +265,5 @@
       </div>
     </main>
   </body>
+  <script src="js/menu-reset.js"></script>
 </html>

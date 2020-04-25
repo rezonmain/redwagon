@@ -1,14 +1,14 @@
 :root {
   font-size: 16px;
   /*Everything is relatie to this*/
-  --background-red: #E03030;
-  --light-red: #FF3636;
-  --dark-red: #CF4141;
-  --background-orange: #EE6903;
+  --background-red: #e03030;
+  --light-red: #ff3636;
+  --dark-red: #cf4141;
+  --background-orange: #ee6903;
   --shadows: 1px 1px 3px 0px rgba(0, 0, 0, 0.14);
-  --font: 'Fredoka One', cursive;
-  --font-title: 'Bowlby One SC', cursive;
-  --font-par: 'Glegoo', serif;
+  --font: "Fredoka One", cursive;
+  --font-title: "Bowlby One SC", cursive;
+  --font-par: "Glegoo", serif;
   --top-nav-height: 3rem;
   --dot-space: 1.375rem;
   --dot-size: 0.062rem;
@@ -548,7 +548,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 0.9rem;
   text-align: center;
   line-height: 2rem;
-  padding: 0 0.70rem;
+  padding: 0 0.7rem;
   color: #fff;
 }
 
@@ -623,9 +623,8 @@ body::-webkit-scrollbar-thumb {
 
 .contacto-section a {
   width: 100%;
-  color: var(--background-orange)
+  color: var(--background-orange);
 }
-
 
 /*////////////////////////////MENU PAGE CARDS////////////////////////////*/
 
@@ -640,7 +639,6 @@ body::-webkit-scrollbar-thumb {
 
 .menu-section-image {
   width: calc(100vw - 1rem);
-
 }
 
 .menu-banner-image {
@@ -651,7 +649,6 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-position: center right;
   float: right;
-
 }
 
 .menu-display {
@@ -660,7 +657,6 @@ body::-webkit-scrollbar-thumb {
 
 /*////////////////////////MEDIA QUERY//////////////////////////////////*/
 @media only screen and (min-width: 768px) {
-
   /*////////////////////////////NAV////////////////////////////*/
   .animated-burger-btn {
     display: none;
@@ -701,7 +697,6 @@ body::-webkit-scrollbar-thumb {
 
   .link-text {
     margin-left: 0.5rem;
-    ;
     font-size: 0.9rem;
   }
 
@@ -750,7 +745,6 @@ body::-webkit-scrollbar-thumb {
 
   .menu-section-image {
     width: 600px;
-  
   }
 }
 
@@ -867,11 +861,14 @@ body::-webkit-scrollbar-thumb {
     font-size: 0.8rem;
   }
 
-  .menu-card, .order-card, .ubicacion-card {
+  .menu-card,
+  .order-card,
+  .ubicacion-card {
     padding: 0;
   }
 
-  .menu-section, .order-section {
+  .menu-section,
+  .order-section {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -884,7 +881,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
   }
 
-  .menu-section .section-image, .order-section .section-image {
+  .menu-section .section-image,
+  .order-section .section-image {
     height: 22rem;
     background-size: cover;
   }
@@ -916,7 +914,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .contacto-card .section-title {
-    background-color: var(--background-red)
+    background-color: var(--background-red);
   }
 
   .contacto-section .link-text {
@@ -957,7 +955,10 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+  }
 
+  .menu-page-card {
+    transition: opacity 0.2s ease-in-out;
   }
 
   .menu-display {
@@ -976,5 +977,6 @@ body::-webkit-scrollbar-thumb {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
   }
 }

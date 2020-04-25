@@ -1,4 +1,5 @@
 let currentWidth;
+let toggleNavStatus;
 let getClickAway = document.querySelector(".clickAway");
 let getSidebar = document.querySelector(".side-nav");
 let getHamburgerBtn = document.querySelector(".animated-burger-btn");
@@ -93,5 +94,47 @@ window.addEventListener("resize", function () {
       break;
   }
 });
+
+let toggleNav = function() {
+    if (window.innerWidth < 768) {
+      /*toggleNavStatus initializes as false */
+      if (!toggleNavStatus) {
+        getSidebar.style.transition = "width 0.3s ease-in-out";
+        getClickAway.style.transition = "all 0.3s ease-in-out";
+        getClickAway.style["z-index"] = "950";
+        getSidebarUl.style.visibility = "visible";
+        getSidebar.style.visibility = "visible";
+        getSidebar.style.width = "75%";
+        getSidebar.style.height = "calc(100vh - var(--top-nav-height))";
+        getClickAway.style.visibility = "visible";
+        getClickAway.style.opacity = "40%";
+        getHamburgerBtn.style.transform = "rotate(90deg)";
+        toggleNavStatus = true;
+      } else {
+        getClickAway.style.visibility = "hidden";
+        getClickAway.style.opacity = "0";
+        getClickAway.style["z-index"] = "0";
+        getSidebar.style.width = "0";
+        getSidebar.style.height = "calc(100vh - var(--top-nav-height))";
+        getHamburgerBtn.style.transform = "rotate(0deg)";
+        toggleNavStatus = false;
+      }
+    } else if (window.innerWidth >= 768 && window.innerWidth < 1000) {
+      if (!toggleNavStatus) {
+        getSidebar.style.transition = "height 0.2s ease-in-out";
+        getSidebarUl.style.visibility = "visible";
+        getSidebar.style.visibility = "visible";
+        getSidebar.style.width = "100vw"
+        getSidebar.style.height = "3.5rem";
+        getDropIcon.style.transform = "rotate(180deg)";
+        toggleNavStatus = true;
+      } else {
+        getSidebar.style.width = "100vw"
+        getSidebar.style.height = "0";
+        getDropIcon.style.transform = "rotate(0)";
+        toggleNavStatus = false;
+      }
+    }
+  }
 
 window.removeEventListener("resize", function () {});

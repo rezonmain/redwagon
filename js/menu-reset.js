@@ -23,9 +23,7 @@ let resetStyling = function (media) {
   } else if (media === "tablet") {
     getSidebar.style.height = "0";
     getSidebar.style.width = "100vw";
-    for (let i = 0; i < getMenuPageCard.length; i++) {
-      getMenuPageCard[i].style.opacity = "100%";
-    }
+    openCarousel("img/menu1.jpg", 0);
   } else if (media === "desktop") {
     getSidebar.style.visibility = "visible";
     getSidebar.style.height = "var(--top-nav-height)";

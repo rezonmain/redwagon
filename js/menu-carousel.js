@@ -40,7 +40,9 @@ let openCarousel = function (url, number) {
   getCarouselImage.style["background-image"] = "url(" + url + ")";
   for (let i = 0; i < getMenuPageCard.length; i++) {
     if (i == number) {
-      getMenuPageCard[i].style.opacity = "50%";
+      if (window.innerWidth > 768) { //Check for phone viewport
+        getMenuPageCard[i].style.opacity = "50%";
+      }
     } else {
       getMenuPageCard[i].style.opacity = "100%";
     }

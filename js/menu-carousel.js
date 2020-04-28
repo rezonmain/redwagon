@@ -1,5 +1,6 @@
 const NUMBER_OF_PICTURES = 5;
 let currentPosition;
+let url;
 
 let moveCarousel = function (direction) {
   if (direction === "right") {
@@ -37,7 +38,9 @@ let openCarousel = function (url, number) {
   let getMenuPageCard = document.querySelectorAll(".menu-page-card");
   let getCarouselImage = document.querySelector(".carousel-image");
   currentPosition = number;
-  getCarouselImage.style["background-image"] = "url(" + url + ")";
+  if (url !== "") {
+    getCarouselImage.style["background-image"] = "url(" + url + ")";
+  }
   for (let i = 0; i < getMenuPageCard.length; i++) {
     if (i == number) {
       if (window.innerWidth > 768) { //Check for phone viewport
@@ -48,3 +51,4 @@ let openCarousel = function (url, number) {
     }
   }
 };
+

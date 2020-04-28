@@ -24,13 +24,11 @@ let resetStyling = function (media) {
   } else if (media === "tablet") {
     getSidebar.style.height = "0";
     getSidebar.style.width = "100vw";
-    openCarousel("img/menu1.jpg", 0);
   } else if (media === "desktop") {
     getSidebar.style.visibility = "visible";
     getSidebar.style.height = "var(--top-nav-height)";
     getSidebar.style.width = "100vw";
     getSidebarUl.style.visibility = "visible";
-    openCarousel("img/menu1.jpg", 0);
   }
 };
 
